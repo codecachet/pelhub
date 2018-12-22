@@ -1,0 +1,3 @@
+[submodule "site/themes/elegant"]
+	path = site/themes/elegant
+	url = https://github.com/codecachet/elegant.git
