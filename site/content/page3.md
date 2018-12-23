@@ -1,24 +1,21 @@
-Title: Another page with code
-Subtitle: this be a subtitle
-Date: 2018-12-20 11:01
-Modified: 2018-12-20 22:00
-tags: pelican, newbie, code
+Title: Python popularity
+Subtitle: rising in influence
+Date: 2018-12-22 18:57
+tags: python, popularity
 
 [TOC]
 
-# My second heading, eh? #
+# Python Popularity #
 
-and this is a teriff article
+There are many ways to measure this, but one thing is certain: Python today is one of the most popular languages, and has one of the highest growth rates of use.
 
-* hello there
-* hello there
-* hello there
+This could be due to several factors:
 
-lets try formatting some code, ok?
+- the beauty, power and simplicity of the language itself
+- as people see computers and coding as more important, the fact that Python is relatively easy to learn
+-  the rise of machine learning and data science, which has seen Python as a tremendous asset for expressing complex ideas, and glueing functionality of high-speed code from other languages together
+-  the rise of amazing tools like Python Notebooks (Jupyter)
+-  great continuing support for so many things: databases, machine learning, graphics, video, games, content management...
+- support of the language from the biggest and brightest in the business, like Google, Spotify, Netflix and Dropbox
 
-```python
-  a = 3
-  b = 4
-  def humbug():
-    c = 29
-```
+<img src="../images/python_growth.png" alt="python python_growth" />

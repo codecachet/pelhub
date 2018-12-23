@@ -37,12 +37,12 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'mythemes/elegant'
+THEME = 'themes/elegant'
 
 PLUGIN_PATHS = ['plugins']   # Name of the directory where plugin are kept.
 #PLUGINS = ['sitemap']       # Name of the particular plugin inside the directory.
 
-PLUGINS = ['sitemap', 'tipue_search', 'extract_toc', 'neighbors']
+PLUGINS = ['sitemap', 'extract_toc', 'neighbors']
 
 # to generate favicon
 STATIC_PATHS = ['theme/images', 'images']
@@ -63,7 +63,7 @@ MARKDOWN = {
 # for elegant
 LANDING_PAGE_ABOUT = {
     'title' : 'This Amazing Journey',
-    'details': '<p>it begins</p> <p>with the first step</p>'
+    'details': 'the actual html is in index.html'
 }
 
 #PROJECTS = [
