@@ -45,7 +45,7 @@ PLUGIN_PATHS = ['plugins']   # Name of the directory where plugin are kept.
 PLUGINS = ['sitemap', 'extract_toc', 'neighbors']
 
 # to generate favicon
-STATIC_PATHS = ['theme/images', 'images']
+STATIC_PATHS = ['theme/images', 'images', 'pdfs']
 USE_SHORTCUT_ICONS = True
 
 
