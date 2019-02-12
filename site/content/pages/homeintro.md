@@ -2,6 +2,7 @@ Title: home_intro
 Date: 2018-12-21 11:01
 tags: python
 status: hidden
+save_as:
 
 
 <img src="../images/fract1.jpg" alt="fractal1" width="300"/>

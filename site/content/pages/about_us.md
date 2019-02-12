@@ -1,7 +1,9 @@
-Title: about_site
+Title: This Amazing Journey
 Date: 2019-02-04
 Status: hidden
-  
+save_as: 
+snippet: about_us
+
 <img src="../images/python_icon.png" alt="drawing" width="200" style="float:left; border:none"/>
 We are on an exploration to make people's lives easier and more
 fun with programming in Python!

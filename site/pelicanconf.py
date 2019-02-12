@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 
 AUTHOR = 'CodeCachet'
 SITENAME = """<span style="font-family: 'Righteous', cursive;color:red">Code<span style="color:black">Cachet</span></span>"""
-#SITEURL = 'https://codecachet.org'
 SITEURL = ''
 
 PATH = 'content'
@@ -42,7 +41,7 @@ THEME = 'themes/elegant'
 PLUGIN_PATHS = ['plugins']   # Name of the directory where plugin are kept.
 #PLUGINS = ['sitemap']       # Name of the particular plugin inside the directory.
 
-PLUGINS = ['sitemap', 'extract_toc', 'neighbors']
+PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'tipue_search']
 
 # to generate favicon
 STATIC_PATHS = ['theme/images', 'images', 'pdfs']
@@ -61,9 +60,10 @@ MARKDOWN = {
 }
 
 # for elegant
+# NOTE: text is now in pages/about_site.md
+
 LANDING_PAGE_ABOUT = {
-    'title' : 'This Amazing Journey',
-    'details': 'the actual html is in index.html'
+   'snippet' : 'about_us'
 }
 
 #PROJECTS = [
@@ -73,3 +73,6 @@ LANDING_PAGE_ABOUT = {
 #        'description' : 'Learn all about this thing called Python'
 #    }
 #]
+DISPLAY_CATEGORIES_MENU_BUTTON = True
+#DISPLAY_SEARCH_BAR = True
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
