@@ -41,7 +41,22 @@
         <div class="span8 offset2 article-content">
             {% endif %}
             <div class="book-content">
+                {#
                 {{ page.content }}
+                #}
+                BOOK_LIST here {{ book_list }}
+                {% for entry in book_list %}
+                <div class="book-entry">
+                  <div class="pic">
+                    {{ entry.metadata.image_url }}
+                    <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
+                  </div>
+                  <div class="review">
+                    {{ entry.content }}
+                  </div>
+                  <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>
+                </div>
+                {% endfor %}
             </div>
             {% from '_includes/comments.html' import comments with context %}
             {{ comments(page) }}

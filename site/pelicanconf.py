@@ -84,4 +84,6 @@ PAGE_PATHS = ['pages']
 ARTICLE_EXCLUDES = ['books']
 BOOKS_PAGES_HOME = 'books'
 
+# NOTE: books.py plugin is in my_plugins
+PLUGIN_PATHS = ['plugins', 'my_plugins']
 

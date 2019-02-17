@@ -6,6 +6,9 @@ from pelican import signals
 from pelican.readers import Readers
 from pelican.contents import Page
 #from pelican.readers import MarkdownReader
+#from pelican.generators import TemplatePagesGenerator
+from pelican.generators import Generator
+from pelican.writers import Writer
 
 import pprint
 from pathlib import Path, PurePath
@@ -15,10 +18,12 @@ class BookEntry(object):
     pass
 
 
-class BooksGenerator(object):
+class BooksGenerator(Generator):
 
-    def __init__(self, context, settings, path, theme, output_path,
+    def __init__(self, context, settings, path, theme, output_path, 
         readers_cache_name='', **kwargs):
+
+        super().__init__(context, settings, path, theme, output_path, readers_cache_name)
 
         self.output_path = output_path
         self.context = context
@@ -50,10 +55,24 @@ class BooksGenerator(object):
             entry = self.generate_entry(f)
             self.entries.append(entry)
 
-    def generate_output(self, writer):
-        # path = os.path.join(self.output_path, 'sitemap.{0}'.format(self.format))
-        print('writer here, writer=', writer, dir(writer))
-        print('pages=', self.context['pages'])
+        self.context['book_list'] = self.entries
+
+        #template = get_template()
+        #writer = Writer()
+        #writer.write_file(name, template, context)
+
+    #def generate_output(self, writer):
+    #    # path = os.path.join(self.output_path, 'sitemap.{0}'.format(self.format))
+    #    print('writer here, writer=', writer, dir(writer))
+    #    print('pages=', self.context['pages'])
+    #
+    #    self.generate_output(writer)
+
+
+
+        #writer.write_file('books', template, self.context, relative_urls=False,
+        #           paginated=None, template_name=None, override_output=False,
+        #           url=None, **kwargs)
 
     def generate_entry(self, md_file):
         entry = self.readers.read_file(
