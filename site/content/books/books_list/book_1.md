@@ -1,0 +1,7 @@
+title: book
+book_title: Classic Computer Science Problems in Python
+link_url: https://amzn.to/2t1wGya
+image_url: <a href="https://www.amazon.com/Classic-Computer-Science-Problems-Python/dp/1617295981/ref=as_li_ss_il?ie=UTF8&qid=1549315303&sr=8-1&keywords=classic+computer+science+problems+in+python&linkCode=li2&tag=expaand-20&linkId=8ce9a59fa445c32b26e22f1dc580394b&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1617295981&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=expaand-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=expaand-20&language=en_US&l=li2&o=1&a=1617295981" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+publish: true
+
+This will be out in early March 2019, but it sounds really good! I heard about it on a podcast with the author. It's really down-to-earth, requires little math, and is especially for the self-taught programmer, students, and those who want a refresh. It covers things like graphs (for deciding what to pull in a complex build, for example), machine learning, and even neural nets. It is a "breadth first" book, in that he covers several topics not in depth, but to give you a taste for decding whether to learn more. He pointed out that he uses the new Python feature "type hints" throughout, (which can be contraversal!). 

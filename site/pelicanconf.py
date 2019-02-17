@@ -41,7 +41,7 @@ THEME = 'themes/elegant'
 PLUGIN_PATHS = ['plugins']   # Name of the directory where plugin are kept.
 #PLUGINS = ['sitemap']       # Name of the particular plugin inside the directory.
 
-PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'tipue_search']
+PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'books']
 
 # to generate favicon
 STATIC_PATHS = ['theme/images', 'images', 'pdfs']
@@ -75,4 +75,13 @@ LANDING_PAGE_ABOUT = {
 #]
 DISPLAY_CATEGORIES_MENU_BUTTON = True
 #DISPLAY_SEARCH_BAR = True
-DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
+THEME_TEMPLATES_OVERRIDES = ['my_templates']
+MENU_PAGE_ORDER_USE = True
+MENU_PAGE_ORDER = ['Books', 'Resources', 'Contact']
+
+PAGE_PATHS = ['pages']
+ARTICLE_EXCLUDES = ['books']
+BOOKS_PAGES_HOME = 'books'
+
+

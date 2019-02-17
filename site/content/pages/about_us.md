@@ -1,7 +1,7 @@
-Title: This Amazing Journey
-Date: 2019-02-04
-Status: hidden
-save_as: 
+title: This Amazing Journey
+date: 2019-02-04
+status: hidden
+save_as: false
 snippet: about_us
 
 <img src="../images/python_icon.png" alt="drawing" width="200" style="float:left; border:none"/>
