@@ -50,7 +50,7 @@ class BooksGenerator(Generator):
 
         self.entries = []
 
-        for f in p.iterdir():
+        for f in sorted(p.iterdir()):
             print('f=', f)
             entry = self.generate_entry(f)
             self.entries.append(entry)
