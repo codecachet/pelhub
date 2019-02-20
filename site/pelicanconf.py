@@ -38,10 +38,11 @@ DEFAULT_PAGINATION = 10
 
 THEME = 'themes/elegant'
 
-PLUGIN_PATHS = ['plugins']   # Name of the directory where plugin are kept.
+#PLUGIN_PATHS = ['plugins']   # Name of the directory where plugin are kept.
 #PLUGINS = ['sitemap']       # Name of the particular plugin inside the directory.
 
 PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'books']
+#PLUGINS = ['sitemap', 'neighbors', 'books']
 
 # to generate favicon
 STATIC_PATHS = ['theme/images', 'images', 'pdfs']
@@ -87,3 +88,6 @@ BOOKS_PAGES_HOME = 'books'
 # NOTE: books.py plugin is in my_plugins
 PLUGIN_PATHS = ['plugins', 'my_plugins']
 
+# dg - mod to temporarily fix bug in extract_toc.py plugin which sometimes thinks there is a toc,
+#   when it is an empty <ul> list, so still would display an empty "Contents". Not sure why!!!
+SHOW_TOC = False

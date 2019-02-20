@@ -4,8 +4,6 @@ Date: 2019-02-04
 tags: python
 category: meetup
 
-[TOC]
-
 We had our in-person class, #2, 31 January, discussing the deep secrets of String Theory. 
 
 Here is a link to the <a href="../pdfs/python2_slides.pdf">slides</a>.

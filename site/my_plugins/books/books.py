@@ -10,12 +10,8 @@ from pelican.contents import Page
 from pelican.generators import Generator
 from pelican.writers import Writer
 
-import pprint
+#import pprint
 from pathlib import Path, PurePath
-
-
-class BookEntry(object):
-    pass
 
 
 class BooksGenerator(Generator):
@@ -25,12 +21,12 @@ class BooksGenerator(Generator):
 
         super().__init__(context, settings, path, theme, output_path, readers_cache_name)
 
-        self.output_path = output_path
-        self.context = context
-        self.settings = settings
+        #self.output_path = output_path
+        #self.context = context
+        #self.settings = settings
 
         #print('settings=', self.settings)
-        pp = pprint.PrettyPrinter()
+        #pp = pprint.PrettyPrinter()
         #pp.pprint(self.settings)
         
         #self.settings['READERS'] = {'md' : MarkdownReader}
@@ -57,31 +53,10 @@ class BooksGenerator(Generator):
 
         self.context['book_list'] = self.entries
 
-        #template = get_template()
-        #writer = Writer()
-        #writer.write_file(name, template, context)
-
-    #def generate_output(self, writer):
-    #    # path = os.path.join(self.output_path, 'sitemap.{0}'.format(self.format))
-    #    print('writer here, writer=', writer, dir(writer))
-    #    print('pages=', self.context['pages'])
-    #
-    #    self.generate_output(writer)
-
-
-
-        #writer.write_file('books', template, self.context, relative_urls=False,
-        #           paginated=None, template_name=None, override_output=False,
-        #           url=None, **kwargs)
-
     def generate_entry(self, md_file):
         entry = self.readers.read_file(
             base_path=self.path, path=md_file, content_class=Page,
             context=self.context)
-            #preread_signal=signals.article_generator_preread,
-            #preread_sender=self,
-            #context_signal=signals.article_generator_context,
-            #context_sender=self)
         
         i = 15
         print('*****entry=', entry, dir(entry))

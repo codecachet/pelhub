@@ -12,3 +12,4 @@ Computers are tools. They can be frustrating a lot of the time. But with a littl
 bit of knowledge and practice, we can take these tools to the next level.
 
 Come join us! The water is fine, and we'll have a great time!
+

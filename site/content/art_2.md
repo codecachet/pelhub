@@ -2,8 +2,6 @@ Title: Introduction
 Date: 2018-12-22 18:40
 tags: python
 
-[TOC]
-
 # Our First Meeting #
 
 Our first meeting is scheduled for January 16, 2019, at 7:00pm at the Fairfax

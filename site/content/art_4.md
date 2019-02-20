@@ -4,8 +4,6 @@ Date: 2019-01-18
 tags: python
 category: meetup
 
-[TOC]
-
 We had our first meeting 16 January, discussing some of the background of the Python language.
 
 Here is a link to the <a href="../pdfs/python1_slides.pdf">slides</a>.
