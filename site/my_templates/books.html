@@ -16,11 +16,119 @@
 <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
 
+
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
 {% from '_includes/smo_metadata.html' import smo_metadata with context %}
 {{ smo_metadata(page) }}
 {% endblock meta_tags_in_head %}
 
 {% block content %}
+<style>
+  body {
+    background-color: #f5f5f5; 
+  }
+  .article-content {
+    background-color: #f5f5f5;
+    color: #4b4b4b !important;
+  }
+
+  /*******
+  .book-content {
+    color: #4b4b4b;
+    font-size: 16px;
+    font-family: Nunito Sans,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 300;
+    line-height: 1.35em;
+  }
+  ******/
+  
+  .article-content, div.recent-posts p {
+    /* font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif; */
+    font: 1.2em/1.6em 'Roboto', sans-serif; 
+    text-align: justify;
+  }
+  
+  .book-col-left .pic a img {
+    /**
+    margin-left: auto;
+    margin-right: auto;
+    **/
+    /* display: block; */
+    border: none; 
+    cursor: pointer !important;
+  }
+  
+  .book-col-right a.view-on-amazon {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #3875d7;
+    color: white;
+    margin: 10px auto;
+    display: block;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer !important;
+  }
+  .book-col-right a.view-on-amazon:hover {
+    color: orange;
+  }
+  
+  .book-col-right a.book-title {
+    text-decoration: none;
+    font-size: 120%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .book-col-right .book-review {
+    /* padding: 0 10px; */
+    /* width: 500px; */
+    
+  }
+  
+  .book-entry {
+    background-color: white;
+    color: #4b4b4b;
+    font-size: 16px;
+    font-family: Nunito Sans,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 300;
+    line-height: 1.35em;
+    clear: both;
+    padding: 20px 22px;
+    border-radius: 3px;
+    border: 1px solid gray; 
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2); 
+    box-sizing: border-box;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+
+  .book-col-left {
+      /* width: 500px; */
+      flex: 1;
+  }
+  
+  .book-col-right {
+    flex: 2;
+  }
+  
+.book-top {
+  display: none;
+}
+.book-bot {
+  display: none;
+}
+
+</style>
+
+
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
@@ -46,14 +154,36 @@
                 #}
                 {% for entry in book_list %}
                 <div class="book-entry">
-                  <div class="pic">
-                    {{ entry.metadata.image_url }}
-                    <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
-                  </div>
-                  <div class="review">
-                    {{ entry.content }}
-                  </div>
-                  <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>
+                    <div class="book-top">
+                        <div class="book-col-left">
+                            <div class="pic">
+                            {{ entry.metadata.image_url }}
+                            </div>
+                        </div>
+                        <div class="book-header">
+                            <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
+                          </div>
+                    </div>
+                    <div class="book-bot">
+                        <div class="book-review">
+                            {{ entry.content }}
+                        </div>
+                        <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>  
+                    </div>
+                    <div class="book-col-left">
+                        <div class="pic">
+                        {{ entry.metadata.image_url }}
+                        </div>
+                    </div>
+                    <div class="book-col-right">
+                      <div class="book-header">
+                        <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
+                      </div>
+                      <div class="book-review">
+                          {{ entry.content }}
+                      </div>
+                      <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>
+                    </div>
                 </div>
                 {% endfor %}
             </div>

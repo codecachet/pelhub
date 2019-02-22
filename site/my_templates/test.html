@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    /* media="screen and (max-width: 768px)" */
+    body {
+      background-color: blue;
+    }
+
+    .container-0 {
+      display: flex;
+      flex-direction: row;
+    }
+    .container-1 {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
+
+    .container-2 {
+      background-color: chartreuse;
+      margin: 10px 10;
+      padding: 5px;
+      border: 1px solid black;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-3 {
+      background: plum;
+      display: flex;
+      flex-direction: column;
+    }
+    .container-4 {
+      background: papayawhip;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container-4 .book-pic {
+      display: none;
+    }
+
+    .book-pic {
+      background:rgb(255, 123, 0);
+      padding: 20px;
+    }
+
+    .book-header {
+      padding: 20px 0;
+      margin: 10px 5px;
+      color: red;
+      font-size: 18px;
+    }
+    .book-review {
+      color:cadetblue;
+    }
+    .order-now {
+      width: 200px;
+      border: 1px solid black;
+      margin: 20px;
+    }
+
+    @media(max-width: 500px) {
+      body {
+        background-color: white;
+      }
+
+      .container-0 {
+        flex-direction: column;
+      }
+
+      .container-1 {
+        display: none;
+      }
+
+      .container-4 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .container-4 .book-pic {
+        display: block;
+        flex: 1;
+      }
+
+      .book-pic img {
+        width: 100%;
+      }
+      
+      .container-4 .book-header {
+        flex: 2;
+        background: wheat;
+      }
+
+      .container2 {
+        color: goldenrod;
+      }
+
+      .container1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+<div class="container-0">
+  <div class="container-1">
+    <div class="book-pic">
+        <img height=300 width=250 src="" />
+    </div>
+  </div>
+
+  <div class="container-2">
+    <div class="container-4">
+      
+      <div class="book-pic">
+          <img src="" />
+      </div>
+      <div class="book-header">
+            hi this is a TITLE of the wonderful book
+      </div>
+    </div>
+    <div class="container-3">
+      <div class="book-review">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Non ipsa, delectus dolor, provident, incidunt adipisci
+          repudiandae officiis unde excepturi nulla asperiores. Hic
+          iste fugit nam odio incidunt unde modi iure.
+      </div>
+      <div class="order-now">
+        ORDER NOW!
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
