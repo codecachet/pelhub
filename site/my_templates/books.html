@@ -15,6 +15,9 @@
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
+{% from '_includes/smo_metadata.html' import smo_metadata with context %}
+{{ smo_metadata(page) }}
+{% endblock meta_tags_in_head %}
 
 {% block head_links %}
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
@@ -27,19 +30,13 @@
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.css" media="screen">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/admonition.css" media="screen">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/static/css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/static/css/books.css" media="screen">
         
         
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
   
         {% endif %}
-        {% endblock head_links %}
-
-
-
-{% from '_includes/smo_metadata.html' import smo_metadata with context %}
-{{ smo_metadata(page) }}
-{% endblock meta_tags_in_head %}
+{% endblock head_links %}
 
 {% block content %}
 
