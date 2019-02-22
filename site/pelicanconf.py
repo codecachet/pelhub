@@ -45,7 +45,7 @@ PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'books']
 #PLUGINS = ['sitemap', 'neighbors', 'books']
 
 # to generate favicon
-STATIC_PATHS = ['theme/images', 'images', 'pdfs']
+STATIC_PATHS = ['theme/images', 'images', 'pdfs', 'static/css']
 USE_SHORTCUT_ICONS = True
 
 
