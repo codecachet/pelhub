@@ -66,6 +66,8 @@
                 {{ page.content }}
                 #}
                 {% for entry in book_list %}
+                  {% include "book_entry.html" %}
+                  {# 
                 <div class="book-entry">
                     <div class="book-top">
                         <div class="book-col-left">
@@ -98,6 +100,7 @@
                       <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>
                     </div>
                 </div>
+                #}
                 {% endfor %}
             </div>
             {% from '_includes/comments.html' import comments with context %}

@@ -1,0 +1,24 @@
+
+<div class="book-entry">
+  <div class="book-container-1">
+    <div class="book-pic">
+      {{ entry.metadata.image_url }}
+    </div>
+  </div>
+  <div class="book-container-2">
+    <div class="book-container-4">
+      <div class="book-pic">
+        {{ entry.metadata.image_url }}
+      </div>
+      <div class="book-header">
+          <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
+      </div>
+    </div>
+    <div class="book-container-3">
+        <div class="book-review">
+            {{ entry.content }}
+        </div>
+    </div>
+    <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>  
+  </div>
+</div>

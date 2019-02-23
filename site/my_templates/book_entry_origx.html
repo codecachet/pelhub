@@ -1,0 +1,33 @@
+
+<div class="book-entry">
+  <div class="book-top">
+    <div class="book-col-left">
+        <div class="pic">
+          {{ entry.metadata.image_url }}
+        </div>
+    </div>
+    <div class="book-header">
+      <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
+    </div>
+  </div>
+  <div class="book-bot">
+    <div class="book-review">
+        {{ entry.content }}
+    </div>
+      <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>  
+  </div>
+  <div class="book-col-left">
+    <div class="pic">
+      {{ entry.metadata.image_url }}
+    </div>
+  </div>
+  <div class="book-col-right">
+    <div class="book-header">
+      <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
+    </div>
+    <div class="book-review">
+        {{ entry.content }}
+    </div>
+      <a class="view-on-amazon" href="{{ entry.metadata.link_url }}}">View on Amazon</a>
+  </div>
+</div>
