@@ -3,6 +3,7 @@ Subtitle: rising in influence
 Date: 2018-12-22 18:57
 tags: python, popularity
 
+
 There are many ways to measure this, but one thing is certain: Python today is one of the most popular languages, and has one of the highest growth rates of use.
 
 This could be due to several factors:

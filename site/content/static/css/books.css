@@ -132,6 +132,9 @@ a.book-title {
   .book-container-2 {
     margin: 5px 10px;
   }
+  .book-container-3 {
+    padding-top: 0;
+  }
 
   .book-container-4 {
     display: flex;
@@ -142,9 +145,16 @@ a.book-title {
     display: block;
     flex: 1;
   }
+  
+  .book-container-4 .book-pic > img {
+    height: 1px;
+    width: 1px;
+    padding: 0;
+  }
 
-  .book-pic img {
+  .book-pic a img {
     width: 100%;
+    padding-bottom: 0;
   }
   
   .book-container-4 .book-header {
@@ -160,5 +170,9 @@ a.book-title {
   .book-review {
     font-size: 14px;
   }
+  .book-review p:first-child {
+    margin-top: 0;
+  }
+
 }
   

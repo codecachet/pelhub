@@ -90,4 +90,4 @@ PLUGIN_PATHS = ['plugins', 'my_plugins']
 
 # dg - mod to temporarily fix bug in extract_toc.py plugin which sometimes thinks there is a toc,
 #   when it is an empty <ul> list, so still would display an empty "Contents". Not sure why!!!
-SHOW_TOC = False
+SHOW_TOC = True
