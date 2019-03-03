@@ -14,5 +14,5 @@ We are planning to do some live streaming on YouTube. This will take some time t
 
 In preparation for live streaming, I suggest, I implore: please go to YouTube and subscribe to our channel! Once we have 100 subscribers, things are a lot easier with YouTube! It costs nothing (you don't even have to subscribe to notifications!), and it will help out this whole project. And if you need help installing Python, git, bash and Visual Studio Code for Windows, try the videos which are there.
 
- <h1><a style="color: blue;text-decoration: underline;" href="https://www.youtube.com/channel/UC0kQpRMjLdxE5IMrrHL37nA">Subscribe to Our Channel! </h1>
+ <h1><a style="color: blue;text-decoration: underline;" href="https://www.youtube.com/channel/UC0kQpRMjLdxE5IMrrHL37nA">Subscribe to Our Channel! </a></h1>
 

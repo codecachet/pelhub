@@ -13,5 +13,5 @@ how could you not? We'll learn a bit about the famous Python Standard Library, a
 
 YouTube is getting closer! So, again I ask, at no risk to you....
 
- <h1><a style="color: blue;text-decoration: underline;" href="https://goo.gl/5SWpoj">Subscribe to Our Channel! </h1>
+ <h1><a style="color: blue;text-decoration: underline;" href="https://goo.gl/5SWpoj">Subscribe to Our Channel! </a></h1>
 

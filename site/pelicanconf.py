@@ -95,5 +95,5 @@ PLUGIN_PATHS = ['plugins', 'my_plugins']
 #   when it is an empty <ul> list, so still would display an empty "Contents". Not sure why!!!
 SHOW_TOC = True
 
-DISQUS_SITENAME = 'codecachet'
+# DISQUS_SITENAME = 'codecachet'
 PRETTIFY_WITH_BS4 = False # us bs4 to prettify output
