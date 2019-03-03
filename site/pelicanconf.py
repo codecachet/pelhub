@@ -41,7 +41,7 @@ THEME = 'themes/elegant'
 #PLUGIN_PATHS = ['plugins']   # Name of the directory where plugin are kept.
 #PLUGINS = ['sitemap']       # Name of the particular plugin inside the directory.
 
-PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'books']
+PLUGINS = ['sitemap', 'extract_toc', 'neighbors', 'books', 'prettify']
 #PLUGINS = ['sitemap', 'neighbors', 'books']
 
 # to generate favicon
@@ -75,7 +75,10 @@ LANDING_PAGE_ABOUT = {
 #    }
 #]
 DISPLAY_CATEGORIES_MENU_BUTTON = True
-#DISPLAY_SEARCH_BAR = True
+# DISPLAY_SEARCH_BAR = True
+DISPLAY_GOOGLE_SEARCH_BAR = True
+GOOGLE_SEARCH_BAR_ID = '007630758047090875401:rfhru89uxou'
+
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
 THEME_TEMPLATES_OVERRIDES = ['my_templates']
 MENU_PAGE_ORDER_USE = True
@@ -88,6 +91,9 @@ BOOKS_PAGES_HOME = 'books'
 # NOTE: books.py plugin is in my_plugins
 PLUGIN_PATHS = ['plugins', 'my_plugins']
 
-# dg - mod to temporarily fix bug in extract_toc.py plugin which sometimes thinks there is a toc,
+# dg - mod to temporarily fix bug in extract_toc.py plugin which sometimes thinks there is a toc via [TOC],
 #   when it is an empty <ul> list, so still would display an empty "Contents". Not sure why!!!
 SHOW_TOC = True
+
+DISQUS_SITENAME = 'codecachet'
+PRETTIFY_WITH_BS4 = False # us bs4 to prettify output

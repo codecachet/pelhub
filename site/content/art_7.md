@@ -16,6 +16,10 @@ Suggestions for homework on the previous meetings to help imprint upon the mind 
 
 2. Write a (non-recursive) program to compute the factorial of a number. _N Factorial_ is defined, for n, as n * (n-1) * (n-2)...1.
 
+<div style="width:300px; height: 30px;">
+<gcse:search></gcse:search>
+</div>
+
 YouTube is getting closer! As usual, I ask that you please:
 
  <h1><a style="color: blue;text-decoration: underline;" href="https://goo.gl/5SWpoj">Subscribe to Our Channel! </h1>

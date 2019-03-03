@@ -11,7 +11,11 @@
         {{ entry.metadata.image_url }}
       </div>
       <div class="book-header">
-          <a class="book-title" href="{{ entry.metadata.link_url }}">{{ entry.metadata.book_title }}</a>
+          <a class="book-title" href="{{ entry.metadata.link_url }}">
+            {{ entry.metadata.book_title }}
+            <div class="book-subtitle">{{entry.metadata.book_subtitle}}</div>
+            <div class="book-author">{{entry.metadata.book_author}}</div>
+          </a>
       </div>
     </div>
     <div class="book-container-3">
